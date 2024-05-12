@@ -6,8 +6,9 @@ import com.example.SpringSecurity_HW.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class ApplicationController {
     private final ApplicationService applicationService;
     private final UserService userService;
